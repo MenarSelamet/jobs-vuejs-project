@@ -1,7 +1,13 @@
-<script setup></script>
+<script setup>
+defineProps({
+  bg: {
+    default: "bg-gray-100",
+  },
+});
+</script>
 
 <template>
-  <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+  <div v-bind:class="`${bg} p-6 rounded-lg shadow-md`">
     <slot></slot>
   </div>
 </template>
