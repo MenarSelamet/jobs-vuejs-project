@@ -5,7 +5,7 @@ import Hero from './components/Hero.vue'
 
 <template>
   <Navbar/>
-  <Hero/>
+  <Hero title="Become a Vue Developer" subTitle="Find the Job that fits your Needs and Expertise"/>
 </template>
 
 <style scoped>
