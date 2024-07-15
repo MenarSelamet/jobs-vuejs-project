@@ -25,7 +25,7 @@ import Card from "./Card.vue";
           </p>
           <a
             href="add-job.html"
-            class="inline-block bg-green-500 text-white rounded-lg px-4 py-2 hover:bg-green-600"
+            class="inline-block bg-gray-500 text-white rounded-lg px-4 py-2 hover:bg-blue-600"
           >
             Add Job
           </a>
