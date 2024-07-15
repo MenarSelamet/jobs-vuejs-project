@@ -2,7 +2,7 @@
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import HomeCards from "./components/HomeCards.vue";
-import JobListings from './components/JobListings.vue'
+import JobListings from "./components/JobListings.vue";
 </script>
 
 <template>
@@ -12,7 +12,7 @@ import JobListings from './components/JobListings.vue'
     subTitle="Find the Job that fits your Needs and Expertise"
   />
   <HomeCards />
-  <JobListings/>
+  <JobListings :limit="3" />
 </template>
 
 <style scoped></style>
