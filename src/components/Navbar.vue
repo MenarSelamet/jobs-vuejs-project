@@ -19,12 +19,12 @@ import logo from "../assets/img/logo.png";
           <div class="md:ml-auto">
             <div class="flex space-x-2">
               <a
-                href="index.html"
+                href="/jobs"
                 class="text-white hover:bg-blue-900 hover:text-white rounded-md px-3 py-2"
                 >Home</a
               >
               <a
-                href="jobs.html"
+                href="/jobs/add"
                 class="text-white bg-gray-900 hover:bg-blue-900 hover:text-white rounded-md px-3 py-2"
                 >Jobs</a
               >
