@@ -12,7 +12,7 @@ import JobListings from "./components/JobListings.vue";
     subTitle="Find the Job that fits your Needs and Expertise"
   />
   <HomeCards />
-  <JobListings :limit="3" />
+  <JobListings :limit="3" :showButton="true" />
 </template>
 
 <style scoped></style>
