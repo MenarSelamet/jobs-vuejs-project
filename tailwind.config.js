@@ -7,9 +7,9 @@ export default {
         sans: ["Poppins", "sans-serif"],
       },
     },
-    // gridTemplateColumns: {
-    //   "70/30": "70% 28%",
-    // },
+    gridTemplateColumns: {
+      "70/30": "70% 28%",
+    },
     variants: {
       extend: {},
     },

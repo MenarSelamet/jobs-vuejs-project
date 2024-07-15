@@ -32,7 +32,7 @@ const truncatedDescription = computed(() => {
         </div>
         <button
           @click="toggleFullDescription"
-          class="text-gray-500 hover:text-green-600 mb-5"
+          class="text-gray-500 hover:text-gray-600 mb-5"
         >
           {{ showFullDescription ? "Less" : "More" }}
         </button>
@@ -48,7 +48,7 @@ const truncatedDescription = computed(() => {
           {{ job.location }}
         </div>
         <RouterLink
-          to="/job"
+          :to="'/jobs/' + job.id"
           class="h-[36px] bg-gray-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-center text-sm"
         >
           Read More
