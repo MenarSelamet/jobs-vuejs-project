@@ -1,18 +1,9 @@
 <script setup>
-import Navbar from "./components/Navbar.vue";
-import Hero from "./components/Hero.vue";
-import HomeCards from "./components/HomeCards.vue";
-import JobListings from "./components/JobListings.vue";
+import Navbar from '@/components/Navbar.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
   <Navbar />
-  <Hero
-    title="Become a Vue Developer"
-    subTitle="Find the Job that fits your Needs and Expertise"
-  />
-  <HomeCards />
-  <JobListings :limit="3" :showButton="true" />
+  <RouterView />
 </template>
-
-<style scoped></style>
