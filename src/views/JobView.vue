@@ -1,13 +1,16 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import axios from "axios";
-import { useRoute, RouterLink } from "vue-router";
+import { useRoute, RouterLink, useRouter } from "vue-router";
 import BackButton from "@/components/BackButton.vue";
+import { useToast } from "vue-toastification";
 
 const route = useRoute();
 const jobId = route.params.id;
 const job = ref([]);
 const company = ref([]);
+const toast = useToast();
+const router = useRouter();
 
 onMounted(async () => {
   try {
@@ -18,6 +21,17 @@ onMounted(async () => {
     console.log("Error fetching the job", error);
   }
 });
+
+const deleteJob = async () => {
+  try {
+    await axios.delete(`/api/jobs/${jobId}`);
+    toast.success("Job Deleted Successfully");
+    router.push("/jobs");
+  } catch (error) {
+    console.log("error deleting job", error);
+    toast.error("Job was not deleted");
+  }
+};
 </script>
 
 <template>
@@ -86,6 +100,7 @@ onMounted(async () => {
               >Edit Job</RouterLink
             >
             <button
+              @click="deleteJob"
               class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
             >
               Delete Job
