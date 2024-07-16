@@ -11,7 +11,7 @@ const company = ref([]);
 
 onMounted(async () => {
   try {
-    const res = await axios.get(`http://localhost:5000/jobs/${jobId}`);
+    const res = await axios.get(`/api/jobs/${jobId}`);
     job.value = res.data;
     company.value = res.data.company;
   } catch (error) {
@@ -21,7 +21,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <BackButton/>
+  <BackButton />
   <section class="bg-gray-50">
     <div class="container m-auto py-10 px-6">
       <div class="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">

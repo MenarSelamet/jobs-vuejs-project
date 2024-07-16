@@ -15,7 +15,7 @@ defineProps({
 const jobs = ref([]);
 onMounted(async () => {
   try {
-    const res = await axios.get("http://localhost:5000/jobs");
+    const res = await axios.get("/api/jobs");
     jobs.value = res.data;
   } catch (error) {
     console.log("Error fetching the jobs", error);
