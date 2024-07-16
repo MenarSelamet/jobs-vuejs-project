@@ -2,6 +2,7 @@
 import { ref, onMounted } from "vue";
 import axios from "axios";
 import { useRoute, RouterLink } from "vue-router";
+import BackButton from "@/components/BackButton.vue";
 
 const route = useRoute();
 const jobId = route.params.id;
@@ -20,6 +21,7 @@ onMounted(async () => {
 </script>
 
 <template>
+  <BackButton/>
   <section class="bg-gray-50">
     <div class="container m-auto py-10 px-6">
       <div class="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
@@ -53,10 +55,7 @@ onMounted(async () => {
             <p class="mb-4">{{ job.salary }}</p>
           </div>
         </main>
-
-        <!-- Sidebar -->
         <aside>
-          <!-- Company Info -->
           <div class="bg-white p-6 rounded-lg shadow-md">
             <h3 class="text-xl font-bold mb-6">Company Info</h3>
 
@@ -81,11 +80,10 @@ onMounted(async () => {
             </p>
           </div>
 
-          <!-- Manage -->
           <div class="bg-white p-6 rounded-lg shadow-md mt-6">
             <h3 class="text-xl font-bold mb-6">Manage Job</h3>
             <RouterLink
-              to="/editjob"
+              :to="`/jobs/edit/${job.id}`"
               class="bg-gray-500 hover:bg-gray-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
               >Edit Job</RouterLink
             >
