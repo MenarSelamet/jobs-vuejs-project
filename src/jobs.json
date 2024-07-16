@@ -111,6 +111,34 @@
         "contactEmail": "modolir@mailinator.com",
         "contactPhone": "+1 (536) 473-2398"
       }
+    },
+    {
+      "id": "95eb",
+      "title": "Vue Front-End Developer",
+      "type": "Part-Time",
+      "location": "Pheonix, AZ",
+      "description": "Join our team as a Part-Time Front-End Developer in beautiful Pheonix, AZ. We are looking for a self-motivated individual with a passion for creating engaging user experiences. This position offers flexible hours and the opportunity to work remotely.",
+      "salary": "$60K - $70K",
+      "company": {
+        "name": "Alpha Elite",
+        "description": "Alpha ttgretertetert",
+        "contactEmail": "contact@adipisicingelit.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "title": "Vue Front-End Developer",
+      "type": "Part-Time",
+      "location": "Pheonix, AZ",
+      "description": "HAALLLOO bhfghfhfhgfghfhgfgh",
+      "salary": "$60K - $70K",
+      "company": {
+        "name": "Alpha Elite",
+        "description": "Alpha ttgretertetertgdfhfgjhfjghjghjgjghjghjg",
+        "contactEmail": "contact@adipisicingelit.com",
+        "contactPhone": "555-555-5555"
+      },
+      "id": "fec3"
     }
   ]
 }
