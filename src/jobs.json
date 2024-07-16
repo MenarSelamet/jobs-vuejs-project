@@ -139,6 +139,20 @@
         "contactEmail": "wegyrumes@mailinator.com",
         "contactPhone": "+1 (194) 932-1165"
       }
+    },
+    {
+      "id": "760a",
+      "title": "Lila Osborne",
+      "type": "Part-Time",
+      "location": "Sed rerum voluptatem",
+      "description": "Eligendi velit duci",
+      "salary": "$175K - $200K",
+      "company": {
+        "name": "Lane Gomez Traders",
+        "description": "Officiis magni eum a",
+        "contactEmail": "modolir@mailinator.com",
+        "contactPhone": "+1 (536) 473-2398"
+      }
     }
   ]
 }
