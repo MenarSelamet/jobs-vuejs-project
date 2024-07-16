@@ -20,8 +20,8 @@ const router = createRouter({
       component: JobsView,
     },
     {
-      path: "/addjob",
-      name: "addjob",
+      path: "/jobs/add",
+      name: "add-job",
       component: AddJobView,
     },
     {
